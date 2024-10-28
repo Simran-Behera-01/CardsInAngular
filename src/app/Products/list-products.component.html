@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  <div class="row justify-content-center align-items-center g-2">
+    @for (product of products; track $index) {
+    <div class="col" style="width: 200rem">
+      <div class="card" style="width: 300px">
+        <img
+          class="card-img-top"
+          [src]="product.photoPath"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Id : {{ product.id }}<br />
+            Name: {{ product.name }}<br />
+            Price : {{ product.Price }}<br />
+            Category: {{ product.Category }}<br />
+            Description : {{ product.Description }}<br />
+            isAvailable: {{ product.isAvailable }}<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
